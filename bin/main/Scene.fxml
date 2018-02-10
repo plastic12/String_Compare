@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.SceneController">
+   <children>
+      <HBox prefHeight="315.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="file1" layoutX="50.0" layoutY="25.0" prefHeight="27.0" prefWidth="379.0" />
+                  <Button layoutX="512.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#selectBtn1" text="browse" />
+                  <Button layoutX="451.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#openBtn1" text="Open" />
+                  <TableView fx:id="menu1" layoutX="25.0" layoutY="100.0" prefHeight="783.0" prefWidth="550.0">
+                    <columns>
+                      <TableColumn fx:id="file1line" editable="false" prefWidth="565.0" sortable="false" text="line" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="50.0" layoutY="59.0" mnemonicParsing="false" onMouseClicked="#update" text="Compare" />
+               </children>
+            </Pane>
+            <Pane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <TextField fx:id="file2" layoutX="50.0" layoutY="25.0" prefHeight="27.0" prefWidth="379.0" />
+                  <Button layoutX="512.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#selectBtn2" text="browse" />
+                  <Button layoutX="451.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#openBtn2" text="Open" />
+                  <TableView fx:id="menu2" layoutX="25.0" layoutY="100.0" prefHeight="783.0" prefWidth="550.0">
+                     <columns>
+                        <TableColumn fx:id="file2line" editable="false" maxWidth="1.7976931348623157E308" prefWidth="549.0" sortable="false" text="line" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
