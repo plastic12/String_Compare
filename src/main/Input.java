@@ -1,6 +1,5 @@
 package main;
 
-import javafx.scene.paint.Color;
 
 public class Input 
 {
